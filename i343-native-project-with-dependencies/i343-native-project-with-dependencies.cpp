@@ -3,18 +3,18 @@
 
 #include <iostream>
 
-//#include <i343/dynamic_math/mathematics.h>
+#include <i343/dynamic_math/mathematics.h>
 #include <i343/static_math/mathematics.h>
 
 int main()
 {
     const double sum = i343::static_math::mathematics::add(42.0, 67.2);
 
-    //const double difference = i343::dynamic_math::mathematics::subtract(128.0, 48.0);
+    const double difference = i343::dynamic_math::mathematics::subtract(128.0, 48.0);
 
     std::cout << sum;
-    //std::cout << '\n'
-	//std::cout << difference;
+    std::cout << '\n';
+	std::cout << difference;
 	std::cout << std::endl;
 
     return 0;
