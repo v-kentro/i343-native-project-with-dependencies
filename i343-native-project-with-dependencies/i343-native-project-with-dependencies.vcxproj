@@ -135,13 +135,13 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\i343-native-static-library.1.0.0\build\native\i343-native-static-library.targets" Condition="Exists('..\packages\i343-native-static-library.1.0.0\build\native\i343-native-static-library.targets')" />
-    <Import Project="..\packages\i343-native-dynamic-library.1.0.0\build\native\i343-native-dynamic-library.targets" Condition="Exists('..\packages\i343-native-dynamic-library.1.0.0\build\native\i343-native-dynamic-library.targets')" />
+    <Import Project="..\packages\i343-native-dynamic-library.1.0.2\build\native\i343-native-dynamic-library.targets" Condition="Exists('..\packages\i343-native-dynamic-library.1.0.2\build\native\i343-native-dynamic-library.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\i343-native-static-library.1.0.0\build\native\i343-native-static-library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\i343-native-static-library.1.0.0\build\native\i343-native-static-library.targets'))" />
-    <Error Condition="!Exists('..\packages\i343-native-dynamic-library.1.0.0\build\native\i343-native-dynamic-library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\i343-native-dynamic-library.1.0.0\build\native\i343-native-dynamic-library.targets'))" />
+    <Error Condition="!Exists('..\packages\i343-native-dynamic-library.1.0.2\build\native\i343-native-dynamic-library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\i343-native-dynamic-library.1.0.2\build\native\i343-native-dynamic-library.targets'))" />
   </Target>
 </Project>

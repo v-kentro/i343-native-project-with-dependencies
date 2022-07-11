@@ -1,0 +1,16 @@
+name: Push Branch
+
+on:
+  push:
+    branches:
+      - '*'
+
+env: {}
+
+jobs:
+  call-build:
+    name: Standard Build
+    uses: ./.github/workflows/build.yaml
+    with:
+      project_name: i343-native-project-with-dependencies
+    secrets: inherit
