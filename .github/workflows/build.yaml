@@ -46,6 +46,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: packages
+          path: packages/
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.1
         with:
